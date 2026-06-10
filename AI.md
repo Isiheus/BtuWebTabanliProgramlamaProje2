@@ -1,4 +1,5 @@
 -sql ile bir websitesi için nasıl şifre veri tabanı oluştururum
+
 -Bir web sitesi için SQL ile kullanıcı şifrelerini saklayacaksan, **şifreleri düz metin (plain text) olarak veritabanına kaydetmemelisin**. Bunun yerine güvenli bir **şifre hash'i** saklamalısın.
 
 Örnek kullanıcı tablosu:
@@ -57,7 +58,9 @@ if (password_verify($password, $hash)) {
 * ✅ Giriş denemelerine hız sınırlaması ekle.
 
 Hangi teknolojiyi kullanıyorsun (PHP, ASP.NET, Node.js, Python/Django, Laravel vb.)? Ona göre tam örnek verebilirim.
+
 -Etkinlik düzenleye tıkladığımda index.php de gözükecek bir post nasıl oluştururum ve veritabanına kaydederim.
+
 -Bunu aslında “etkinlik oluştur → veritabanına kaydet → index.php’de listele” akışıyla yaparsın.
 
 ---

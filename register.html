@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Kayıt Ol</title>
+
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+</head>
+<body>
+  <div class="navbar-brand">
+    <a class="navbar-item has-text-white" href="index.php">
+      Ana Sayfa
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+<section class="section">
+  <div class="container" style="max-width: 400px;">
+
+    <h1 class="title has-text-centered">Kayıt Ol</h1>
+
+    <form action="register.php" method="post">
+
+      <div class="field">
+        <label class="label">Kullanıcı Adı</label>
+        <div class="control">
+          <input class="input" type="text" name="username" placeholder="kullanıcı adı" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">E-posta</label>
+        <div class="control">
+          <input class="input" type="email" name="email" placeholder="email" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Şifre</label>
+        <div class="control">
+          <input class="input" type="password" name="password" placeholder="şifre" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <button class="button is-primary is-fullwidth">Kayıt Ol</button>
+      </div>
+
+    </form>
+
+    <p class="has-text-centered">
+      Zaten hesabın var mı? <a href="login.html">Giriş Yap</a>
+    </p>
+
+  </div>
+</section>
+
+</body>
+</html>
